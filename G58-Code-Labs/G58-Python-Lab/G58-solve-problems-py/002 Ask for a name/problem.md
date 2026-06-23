@@ -22,5 +22,5 @@ Use `input()` to take user input and `print()` to display it.
 ```python
 # solution.py
 
-user_name = input ('Your Name Please = ')
+user_name = input('Your Name Please = ')
 print('Hello', user_name)
