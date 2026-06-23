@@ -1,4 +1,4 @@
-# 002 - Ask for a name
+# 002 - Ask name
 
 ### Problem
 Write a program that asks for a name from the user and greets the user.
