@@ -10,13 +10,13 @@ Print exactly: for e.g.
 Hello, John
 
 ---
-<details>
+
 <summary>Hint</summary>
 Just use print() to display the message.
 
 ---
 
-<details>
+
 <summary>Solution</summary>
 
 ```python
