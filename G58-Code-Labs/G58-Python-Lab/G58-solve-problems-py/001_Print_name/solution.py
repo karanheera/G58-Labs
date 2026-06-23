@@ -1,3 +1,3 @@
-#001_print_your_name
+#001 Program to Print Name
 
 print("Karan Heera")
