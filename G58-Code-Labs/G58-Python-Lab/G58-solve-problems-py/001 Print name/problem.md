@@ -1,4 +1,4 @@
-# 001 - Print Your Name
+# 001 - Print name
 
 ### Problem
 Write a program that prints your name.
