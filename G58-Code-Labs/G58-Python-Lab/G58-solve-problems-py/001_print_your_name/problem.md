@@ -1,31 +1,25 @@
-## 001 - Print Your Name
+# 001 - Print Your Name
 
 ### Problem
 Write a program that prints your name.
 
-### Input
-None
+---
 
 ### Output
-Your name as a string
+Print exactly: for e.g.
+Hello John
 
-### Example
-Input:
-None
+---
 
-Output:
-John
+### Hint
+Just use print() to display the message.
 
-
-<details>
-<summary>Hint</summary>
-Just use print()
-</details>
+---
 
 <details>
 <summary>Solution</summary>
 
 ```python
-#001_Print Your Name
+# solution.py logic
 
-print("Karan Heera")
+print("Hello John")
