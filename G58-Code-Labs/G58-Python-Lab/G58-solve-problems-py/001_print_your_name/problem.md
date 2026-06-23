@@ -7,11 +7,11 @@ Write a program that prints your name.
 
 ### Output
 Print exactly: for e.g.
-Hello John
+Hello, John
 
 ---
-
-### Hint
+<details>
+<summary>Hint</summary>
 Just use print() to display the message.
 
 ---
@@ -22,4 +22,4 @@ Just use print() to display the message.
 ```python
 # solution.py logic
 
-print("Hello John")
+print("Hello, Karan Heera")
