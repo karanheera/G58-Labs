@@ -1,30 +1,31 @@
-# 001 - Print Your Name
+## 001 - Print Your Name
 
-## Problem
+### Problem
 Write a program that prints your name.
 
-## Input
+### Input
 None
 
-## Output
+### Output
 Your name as a string
 
-## Example
+### Example
 Input:
 None
 
 Output:
 John
 
----
 
 <details>
-<summary>💡 Hint</summary>
+<summary>Hint</summary>
 Just use print()
 </details>
 
 <details>
-<summary>✅ Solution</summary>
+<summary>Solution</summary>
 
 ```python
-print("John")
+#001_Print Your Name
+
+print("Karan Heera")
