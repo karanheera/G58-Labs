@@ -5,14 +5,14 @@
 ## Problem Statement
 Write a program that asks the user for their name and prints a greeting message.
 
----
+
 
 ## Constraints
 - Input will be a valid string
 - Name length is assumed between 1 to 100 characters
 - No empty or null input
 
----
+
 
 ## Input
 A single string input from the user representing their name.
@@ -24,9 +24,9 @@ John
 
 ```
 
----
 
-## 📤 Output
+
+## Output
 Print exactly:
 ```
 
@@ -41,7 +41,7 @@ Hello, John
 
 ```
 
----
+
 
 <details>
 <summary>Pattern / DSA Concept</summary>
@@ -54,7 +54,7 @@ This problem does not use any advanced data structures or algorithms.
 
 </details>
 
----
+
 
 <details>
 <summary>Approach</summary>
@@ -67,7 +67,7 @@ We need to:
 
 </details>
 
----
+
 
 <details>
 <summary>Algorithm Used</summary>
@@ -77,7 +77,7 @@ We need to:
 
 </details>
 
----
+
 
 <details>
 <summary>Pseudocode</summary>
@@ -96,7 +96,7 @@ END
 
 </details>
 
----
+
 
 <details>
 <summary>Code</summary>
@@ -110,7 +110,7 @@ print("Hello,", user_name)
 
 </details>
 
----
+
 
 <details>
 <summary>Dry Run</summary>
@@ -134,7 +134,7 @@ Hello, John
 
 </details>
 
----
+
 
 <details>
 <summary>Complexity</summary>
@@ -154,7 +154,7 @@ In simple terms:
 
 </details>
 
----
+
 
 <details>
 <summary>Key Learning</summary>
@@ -164,4 +164,4 @@ In simple terms:
 * Basic string concatenation
 
 </details>
-```
+
