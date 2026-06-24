@@ -1,9 +1,16 @@
-# 002 - Ask Name
+# 002 - Problem
 
 ---
 
-## Problem
+## Problem Statement
 Write a program that asks the user for their name and prints a greeting message.
+
+---
+
+## Constraints
+- Input will be a valid string
+- Name length is assumed between 1 to 100 characters
+- No empty or null input
 
 ---
 
@@ -12,21 +19,40 @@ A single string input from the user representing their name.
 
 Example:
 ```
+
 John
+
 ```
 
 ---
 
-## Output
+## 📤 Output
 Print exactly:
 ```
+
 Hello, <name>
+
 ```
 
 Example:
 ```
+
 Hello, John
+
 ```
+
+---
+
+<details>
+<summary>Pattern / DSA Concept</summary>
+
+- Pattern: Basic Input/Output
+- Concept: String Manipulation
+- Type: Easy / Beginner Problem
+
+This problem does not use any advanced data structures or algorithms.
+
+</details>
 
 ---
 
@@ -34,12 +60,10 @@ Hello, John
 <summary>Approach</summary>
 
 We need to:
-- Take input from the user using `input()`
+- Take input using `input()`
 - Store it in a variable
-- Combine it with the greeting string `"Hello, "`
-- Print the final message
-
-This is a simple input-output problem with string concatenation.
+- Concatenate it with `"Hello, "`
+- Print final output
 
 </details>
 
@@ -57,7 +81,9 @@ This is a simple input-output problem with string concatenation.
 
 <details>
 <summary>Pseudocode</summary>
+
 ```
+
 START
 
 READ name from user
@@ -65,22 +91,22 @@ SET result = "Hello, " + name
 PRINT result
 
 END
-````
+
+```
+
 </details>
 
 ---
 
 <details>
 <summary>Code</summary>
+
 ```python
 # solution.py
 
-# take user input
-user_name = input('Your Name Please = ')
-
-# print greeting message
-print('Hello,', user_name)
-````
+user_name = input("Your Name Please = ")
+print("Hello,", user_name)
+```
 
 </details>
 
@@ -90,18 +116,22 @@ print('Hello,', user_name)
 <summary>Dry Run</summary>
 
 Input:
+
 ```
 John
 ```
+
 Execution Steps:
 
 * user_name = "John"
 * print("Hello, John")
 
 Output:
+
 ```
 Hello, John
 ```
+
 </details>
 
 ---
@@ -109,11 +139,13 @@ Hello, John
 <details>
 <summary>Complexity</summary>
 
-*Time Complexity: O(1)*: 
-The program performs a fixed number of operations regardless of input size. It only reads input and prints output once.
+Time Complexity: O(1)
 
-*Space Complexity: O(1)*:
-No extra memory grows with input size. Only one variable (`user_name`) is used.
+* Only one input and one print operation
+
+Space Complexity: O(1)
+
+* Only one variable used, no extra memory growth
 
 In simple terms:
 
@@ -127,8 +159,9 @@ In simple terms:
 <details>
 <summary>Key Learning</summary>
 
-* How to take input using `input()` in Python
+* How to take input using `input()`
 * How to print output using `print()`
 * Basic string concatenation
 
 </details>
+```
