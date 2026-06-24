@@ -1,29 +1,151 @@
-# 002 - Ask name
-
-### Problem
-Write a program that asks for a name from the user and greets the user.
+# 002 - Ask Name
 
 ---
 
-### Output
-Print exactly: for e.g.
+## Problem
+Write a program that asks the user for their name and prints a greeting message.
+
+---
+
+## Input
+A single string input from the user representing their name.
+
+Example:
+```
+
+John
+
+```
+
+---
+
+## Output
+Print exactly:
+```
+
+Hello, <name>
+
+```
+
+Example:
+```
+
 Hello, John
 
-<details>
-<summary>Hint</summary>
+```
 
-Use `input()` to take user input and `print()` to display it.
+---
+
+<details>
+<summary>Approach</summary>
+
+We need to:
+- Take input from the user using `input()`
+- Store it in a variable
+- Combine it with the greeting string `"Hello, "`
+- Print the final message
+
+This is a simple input-output problem with string concatenation.
 
 </details>
 
+---
+
 <details>
-<summary>Solution</summary>
+<summary>Algorithm Used</summary>
+
+- Simple Input/Output Handling
+- String Concatenation
+
+</details>
+
+---
+
+<details>
+<summary>Pseudocode</summary>
+
+```
+
+START
+
+READ name from user
+SET result = "Hello, " + name
+PRINT result
+
+END
+
+````
+
+</details>
+
+---
+
+<details>
+<summary>Code</summary>
 
 ```python
 # solution.py
 
-# first, we will ask the user for their name using the input() function
+# take user input
 user_name = input('Your Name Please = ')
 
-# then we will greet the user using the print() function
+# print greeting message
 print('Hello,', user_name)
+````
+
+</details>
+
+---
+
+<details>
+<summary>Dry Run</summary>
+
+Input:
+
+```
+John
+```
+
+Execution Steps:
+
+* user_name = "John"
+* print("Hello, John")
+
+Output:
+
+```
+Hello, John
+```
+
+</details>
+
+---
+
+<details>
+<summary>Complexity</summary>
+
+### Time Complexity: O(1)
+
+The program performs a fixed number of operations regardless of input size. It only reads input and prints output once.
+
+### Space Complexity: O(1)
+
+No extra memory grows with input size. Only one variable (`user_name`) is used.
+
+In simple terms:
+
+* Runs instantly
+* Uses constant memory
+
+</details>
+
+---
+
+<details>
+<summary>Key Learning</summary>
+
+* How to take input using `input()` in Python
+* How to print output using `print()`
+* Basic string concatenation
+
+</details>
