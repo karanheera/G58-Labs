@@ -1,20 +1,19 @@
 # 002 - Problem
 
----
 
 ## Problem Statement
 Write a program that asks the user for their name and prints a greeting message.
 
 
 
-## Constraints
+### Constraints
 - Input will be a valid string
 - Name length is assumed between 1 to 100 characters
 - No empty or null input
 
 
 
-## Input
+### Input
 A single string input from the user representing their name.
 
 Example:
@@ -26,7 +25,7 @@ John
 
 
 
-## Output
+### Output
 Print exactly:
 ```
 
@@ -57,7 +56,7 @@ This problem does not use any advanced data structures or algorithms.
 
 
 <details>
-<summary>Approach</summary>
+<summary>*Approach*</summary>
 
 We need to:
 - Take input using `input()`
