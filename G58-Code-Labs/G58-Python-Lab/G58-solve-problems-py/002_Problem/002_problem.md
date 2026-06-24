@@ -12,9 +12,7 @@ A single string input from the user representing their name.
 
 Example:
 ```
-
 John
-
 ```
 
 ---
@@ -22,16 +20,12 @@ John
 ## Output
 Print exactly:
 ```
-
 Hello, <name>
-
 ```
 
 Example:
 ```
-
 Hello, John
-
 ```
 
 ---
@@ -63,9 +57,7 @@ This is a simple input-output problem with string concatenation.
 
 <details>
 <summary>Pseudocode</summary>
-
 ```
-
 START
 
 READ name from user
@@ -73,16 +65,13 @@ SET result = "Hello, " + name
 PRINT result
 
 END
-
 ````
-
 </details>
 
 ---
 
 <details>
 <summary>Code</summary>
-
 ```python
 # solution.py
 
@@ -101,22 +90,18 @@ print('Hello,', user_name)
 <summary>Dry Run</summary>
 
 Input:
-
 ```
 John
 ```
-
 Execution Steps:
 
 * user_name = "John"
 * print("Hello, John")
 
 Output:
-
 ```
 Hello, John
 ```
-
 </details>
 
 ---
@@ -124,12 +109,10 @@ Hello, John
 <details>
 <summary>Complexity</summary>
 
-### Time Complexity: O(1)
-
+*Time Complexity: O(1)*: 
 The program performs a fixed number of operations regardless of input size. It only reads input and prints output once.
 
-### Space Complexity: O(1)
-
+*Space Complexity: O(1)*:
 No extra memory grows with input size. Only one variable (`user_name`) is used.
 
 In simple terms:
