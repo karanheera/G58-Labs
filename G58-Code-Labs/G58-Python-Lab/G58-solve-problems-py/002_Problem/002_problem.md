@@ -56,7 +56,7 @@ This problem does not use any advanced data structures or algorithms.
 
 
 <details>
-<summary>*Approach*</summary>
+<summary>Approach</summary>
 
 We need to:
 - Take input using `input()`
@@ -101,7 +101,7 @@ END
 <summary>Code</summary>
 
 ```python
-# solution.py
+# 002_solution.py
 
 user_name = input("Your Name Please = ")
 print("Hello,", user_name)
