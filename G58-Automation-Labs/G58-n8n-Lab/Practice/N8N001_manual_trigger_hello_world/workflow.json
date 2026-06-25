@@ -1,0 +1,66 @@
+{
+  "name": "G58-Labs/N8N001_manual_trigger_hello_world",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -256,
+        -16
+      ],
+      "id": "38181669-d619-4085-bd49-f97c97cd2372",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "a54a736c-fd29-41bc-bc86-97eeb3c58785",
+              "name": "message",
+              "value": "Hello World",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -48,
+        -16
+      ],
+      "id": "20642207-f56b-45cd-a5f2-82e7b02d22db",
+      "name": "Edit Fields"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "ef9c9db6-da2a-4eef-a9a4-104ed66541e8",
+  "meta": {
+    "instanceId": "7f864ed5d9b543f15daada94c96e8cf56d9190d404cb954e78ed2a49497d3768"
+  },
+  "nodeGroups": [],
+  "id": "u4Tn1H73THV97w6j",
+  "tags": []
+}
