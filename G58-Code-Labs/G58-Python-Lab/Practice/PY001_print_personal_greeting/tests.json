@@ -1,0 +1,14 @@
+[
+  {
+    "input": "John",
+    "output": "Hello, John"
+  },
+  {
+    "input": "Alice",
+    "output": "Hello, Alice"
+  },
+  {
+    "input": "Ravi",
+    "output": "Hello, Ravi"
+  }
+]

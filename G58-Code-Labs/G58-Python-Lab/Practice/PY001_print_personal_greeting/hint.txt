@@ -1,0 +1,1 @@
+Think: You are combining a fixed text "Hello," with user input using print().

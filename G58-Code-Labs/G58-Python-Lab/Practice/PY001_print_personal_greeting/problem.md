@@ -1,4 +1,4 @@
-# PY002 - Ask Name and Greet
+# PY001 - print_personal_greeting
 
 
 ## Problem Statement
@@ -98,44 +98,6 @@ END
 
 
 <details>
-<summary>Code</summary>
-
-```python
-# 002_solution.py
-
-user_name = input("Your Name Please = ")
-print("Hello,", user_name)
-```
-
-</details>
-
-
-
-<details>
-<summary>Dry Run</summary>
-
-Input:
-
-```
-John
-```
-
-Execution Steps:
-
-* user_name = "John"
-* print("Hello, John")
-
-Output:
-
-```
-Hello, John
-```
-
-</details>
-
-
-
-<details>
 <summary>Complexity</summary>
 
 Time Complexity: O(1)
@@ -164,3 +126,11 @@ In simple terms:
 
 </details>
 
+
+
+<details>
+<summary>Solution</summary>
+
+Check reference_solution/solution.py
+
+</details>
