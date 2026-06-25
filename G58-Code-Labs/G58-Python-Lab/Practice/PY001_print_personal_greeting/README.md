@@ -107,3 +107,12 @@ To Open Solution:
 
 
 </details>
+
+### Real-World Use Case
+
+Greeting users is commonly used in:
+- Login systems
+- Customer portals
+- Chatbots
+- Desktop applications
+- Web applications
