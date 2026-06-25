@@ -3,26 +3,22 @@
 ## Problem Statement
 ***Write a program that asks the user for their name and prints a greeting message.***
 
+### Example
 
-## Input
-A single string input from the user.
+**Input**
 
-Example:
+```text
+John
+```
 
-**John**
+**Output**
 
-
-## Output
-Print:
-
-Example:
-
-**Hello, John**
+```text
+Hello, John
+```
 
 
----
-
-## ⚠️ Important Rule
+### ⚠️ Important Rule
 Try solving it yourself before checking the solution.
 
 *How to Think About the Problem*
@@ -90,7 +86,7 @@ END
 ---
 
 <details>
-<summary>🎯 Key Learning</summary>
+<summary>Key Learning</summary>
 
 - input() function
 - print() function
