@@ -108,6 +108,8 @@ To Open Solution:
 
 </details>
 
+---
+
 ### Real-World Use Case
 
 Greeting users is commonly used in:
