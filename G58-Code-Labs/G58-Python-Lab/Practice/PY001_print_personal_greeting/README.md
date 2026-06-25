@@ -102,7 +102,8 @@ END
 <details>
 <summary>Solution (Open only after trying)</summary>
 
-- [Click to Open Solution](solution.py)
+To Open Solution:
+[*Click Here* ](solution.py)
 
 
 </details>
