@@ -86,7 +86,17 @@ Which node can create custom data?
 ---
 
 <details>
-<summary>Real-World Use Case</summary>
+<summary>Solution (Open only after trying)</summary>
+
+Open:
+
+[*Click Here* ](workflow.json)
+
+</details>
+
+---
+
+### Real-World Use Case
 
 Creating data manually is useful for:
 
@@ -95,16 +105,3 @@ Creating data manually is useful for:
 - Debugging automations
 - Creating sample data
 - Prototyping larger workflows
-
-</details>
-
----
-
-<details>
-<summary>Solution (Open only after trying)</summary>
-
-Open:
-
-[*Click Here* ](workflow.json)
-
-</details>
