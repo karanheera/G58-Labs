@@ -2,31 +2,26 @@
 
 ---
 
-## 🧠 Problem Statement
-Write a program that asks the user for their name and prints a greeting message.
+## Problem Statement
+***Write a program that asks the user for their name and prints a greeting message.***
 
 ---
 
-## 📥 Input
+## Input
 A single string input from the user.
 
 Example:
 
-John
-
+**John**
 
 ---
 
-## 📤 Output
-Print exactly:
-
-
-Hello, <name>
-
+## Output
+Print:
 
 Example:
 
-Hello, John
+**Hello, John**
 
 
 ---
@@ -37,7 +32,7 @@ Try solving it yourself before checking the solution.
 ---
 
 <details>
-<summary>🧠 How to Think About the Problem</summary>
+<summary>How to Think About the Problem</summary>
 
 Before coding:
 
@@ -47,13 +42,13 @@ Before coding:
   - What is output?
   - How do I connect them?
 
-👉 First think, then code.
+First think, then code.
 </details>
 
 ---
 
 <details>
-<summary>🪜 Approach</summary>
+<summary>Approach</summary>
 
 - Take input using `input()`
 - Store it in a variable
@@ -63,7 +58,7 @@ Before coding:
 ---
 
 <details>
-<summary>🧾 Algorithm</summary>
+<summary>Algorithm</summary>
 
 1. Read input from user  
 2. Store in variable  
@@ -73,7 +68,7 @@ Before coding:
 ---
 
 <details>
-<summary>📌 Pseudocode</summary>
+<summary>Pseudocode</summary>
 
 
 START
@@ -86,10 +81,15 @@ END
 ---
 
 <details>
-<summary>⏱ Complexity</summary>
+<summary>Complexity</summary>
 
-- Time Complexity: O(1)
-- Space Complexity: O(1)
+*- Time Complexity: O(1)*
+  - Simple: The program takes one input and produces one output.
+  - Technical: It performs a fixed number of operations regardless of the input size.
+
+*- Space Complexity: O(1)*
+  - Simple: The program only stores the user's name.
+  - Technical: It uses a constant amount of memory.
 
 (Simple and constant operations only)
 </details>
