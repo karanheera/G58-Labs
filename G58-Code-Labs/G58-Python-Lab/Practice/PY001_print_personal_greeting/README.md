@@ -1,11 +1,8 @@
 # PY001 - Print Personal Greeting
 
----
-
 ## Problem Statement
 ***Write a program that asks the user for their name and prints a greeting message.***
 
----
 
 ## Input
 A single string input from the user.
@@ -14,7 +11,6 @@ Example:
 
 **John**
 
----
 
 ## Output
 Print:
@@ -29,10 +25,7 @@ Example:
 ## ⚠️ Important Rule
 Try solving it yourself before checking the solution.
 
----
-
-<details>
-<summary>How to Think About the Problem</summary>
+*How to Think About the Problem*
 
 Before coding:
 
@@ -40,10 +33,10 @@ Before coding:
 - Ask yourself:
   - What is input?
   - What is output?
-  - How do I connect them?
+  - How do I connect them?*
 
-First think, then code.
-</details>
+First think, then code on plain paper or MS word or Google Doc
+
 
 ---
 
@@ -109,8 +102,6 @@ END
 <details>
 <summary>💡 Solution (Open only after trying)</summary>
 
-```python
-name = input()
-print("Hello,", name)
-``` id="sol001"
+[Open solution.py](solution.py)
+
 </details>
