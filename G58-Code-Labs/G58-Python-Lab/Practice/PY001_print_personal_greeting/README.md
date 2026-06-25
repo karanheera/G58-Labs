@@ -102,8 +102,7 @@ END
 <details>
 <summary>Solution (Open only after trying)</summary>
 
-
-[Click to Open Solution](solution.py)
+- [Click to Open Solution](solution.py)
 
 
 </details>
