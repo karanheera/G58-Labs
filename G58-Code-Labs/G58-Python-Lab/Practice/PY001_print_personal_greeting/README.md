@@ -61,8 +61,10 @@ First think, then code on plain paper or MS word or Google Doc
 
 
 START
+
 READ name
 PRINT "Hello, " + name
+
 END
 
 </details>
