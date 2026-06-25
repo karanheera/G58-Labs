@@ -75,15 +75,26 @@ END
 <details>
 <summary>Complexity</summary>
 
-*- Time Complexity: O(1)*
-  - Simple: The program takes one input and produces one output.
-  - Technical: It performs a fixed number of operations regardless of the input size.
+*Time Complexity*
 
-*- Space Complexity: O(1)*
-  - Simple: The program only stores the user's name.
-  - Technical: It uses a constant amount of memory.
+`input()` reads the user's input. If the input length is `n` characters, reading it takes `O(n)` time.
+
+`print("Hello,", name)` outputs the greeting and the input string, which also takes `O(n)` time because it prints the entire input.
+
+**Overall Time Complexity: `O(n)`**
+
+(where `n` is the length of the input string)
+
+*Space Complexity*
+
+The variable `name` stores the input string of length `n`, requiring `O(n)` space.
+
+No other data structures grow with input size.
+
+**Overall Space Complexity: `O(n)`**
 
 (Simple and constant operations only)
+
 </details>
 
 ---
