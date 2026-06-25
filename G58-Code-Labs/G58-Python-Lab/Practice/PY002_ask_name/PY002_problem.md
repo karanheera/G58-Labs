@@ -1,4 +1,4 @@
-# PYD-002 - Ask Name and Greet
+# PY002 - Ask Name and Greet
 
 
 ## Problem Statement
