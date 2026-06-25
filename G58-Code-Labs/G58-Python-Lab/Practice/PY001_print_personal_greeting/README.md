@@ -1,136 +1,116 @@
-# PY001 - print_personal_greeting
+# PY001 - Print Personal Greeting
 
+---
 
-## Problem Statement
+## 🧠 Problem Statement
 Write a program that asks the user for their name and prints a greeting message.
 
+---
 
-
-### Constraints
-- Input will be a valid string
-- Name length is assumed between 1 to 100 characters
-- No empty or null input
-
-
-
-### Input
-A single string input from the user representing their name.
+## 📥 Input
+A single string input from the user.
 
 Example:
-```
 
 John
 
-```
 
+---
 
-
-### Output
+## 📤 Output
 Print exactly:
-```
+
 
 Hello, <name>
 
-```
 
 Example:
-```
 
 Hello, John
 
-```
 
+---
 
+## ⚠️ Important Rule
+Try solving it yourself before checking the solution.
+
+---
 
 <details>
-<summary>Pattern / DSA Concept</summary>
+<summary>🧠 How to Think About the Problem</summary>
 
-- Pattern: Basic Input/Output
-- Concept: String Manipulation
-- Type: Easy / Beginner Problem
+Before coding:
 
-This problem does not use any advanced data structures or algorithms.
+- Think on paper / MS Word / notebook
+- Ask yourself:
+  - What is input?
+  - What is output?
+  - How do I connect them?
 
+👉 First think, then code.
 </details>
 
-
+---
 
 <details>
-<summary>Approach</summary>
+<summary>🪜 Approach</summary>
 
-We need to:
 - Take input using `input()`
 - Store it in a variable
-- Concatenate it with `"Hello, "`
-- Print final output
-
+- Print `"Hello, " + name`
 </details>
 
-
+---
 
 <details>
-<summary>Algorithm Used</summary>
+<summary>🧾 Algorithm</summary>
 
-- Simple Input/Output Handling
-- String Concatenation
-
+1. Read input from user  
+2. Store in variable  
+3. Print greeting message  
 </details>
 
-
+---
 
 <details>
-<summary>Pseudocode</summary>
+<summary>📌 Pseudocode</summary>
 
-```
 
 START
-
-READ name from user
-SET result = "Hello, " + name
-PRINT result
-
+READ name
+PRINT "Hello, " + name
 END
 
-```
-
 </details>
 
-
+---
 
 <details>
-<summary>Complexity</summary>
+<summary>⏱ Complexity</summary>
 
-Time Complexity: O(1)
+- Time Complexity: O(1)
+- Space Complexity: O(1)
 
-* Only one input and one print operation
-
-Space Complexity: O(1)
-
-* Only one variable used, no extra memory growth
-
-In simple terms:
-
-* Runs instantly
-* Uses constant memory
-
+(Simple and constant operations only)
 </details>
 
-
+---
 
 <details>
-<summary>Key Learning</summary>
+<summary>🎯 Key Learning</summary>
 
-* How to take input using `input()`
-* How to print output using `print()`
-* Basic string concatenation
-
+- input() function
+- print() function
+- string concatenation
 </details>
 
-
+---
 
 <details>
-<summary>Solution</summary>
+<summary>💡 Solution (Open only after trying)</summary>
 
-Check reference_solution/solution.py
-
+```python
+name = input()
+print("Hello,", name)
+``` id="sol001"
 </details>
