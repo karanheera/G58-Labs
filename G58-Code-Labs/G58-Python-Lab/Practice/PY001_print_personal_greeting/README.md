@@ -100,8 +100,10 @@ END
 ---
 
 <details>
-<summary>💡 Solution (Open only after trying)</summary>
+<summary>Solution (Open only after trying)</summary>
 
-[Open solution.py](solution.py)
+
+[Click to Open Solution](solution.py)
+
 
 </details>
