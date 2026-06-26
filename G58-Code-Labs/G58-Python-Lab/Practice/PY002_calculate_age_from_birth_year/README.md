@@ -1,4 +1,5 @@
 # PY002 - Calculate Age from Birth Year
+**Difficulty:** ★☆☆☆☆ Beginner
 
 ## Problem Statement
 

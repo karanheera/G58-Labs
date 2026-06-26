@@ -1,4 +1,5 @@
 # PY005 - Simple Interest Calculator
+**Difficulty:** ★☆☆☆☆ Beginner
 
 ## Problem Statement
 

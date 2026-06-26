@@ -1,4 +1,5 @@
 # PY003 - Convert Celsius to Fahrenheit
+**Difficulty:** ★☆☆☆☆ Beginner
 
 ## Problem Statement
 

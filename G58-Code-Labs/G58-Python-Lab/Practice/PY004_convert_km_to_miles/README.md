@@ -1,4 +1,5 @@
 # PY004 - Convert Kilometers to Miles
+**Difficulty:** ★☆☆☆☆ Beginner
 
 ## Problem Statement
 

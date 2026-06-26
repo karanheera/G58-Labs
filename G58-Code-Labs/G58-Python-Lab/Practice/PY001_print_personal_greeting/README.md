@@ -1,4 +1,5 @@
 # PY001 - Print Personal Greeting
+**Difficulty:** ★☆☆☆☆ Beginner
 
 ## Problem Statement
 ***Write a program that asks the user for their name and prints a greeting message.***
