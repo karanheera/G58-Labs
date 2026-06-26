@@ -1,0 +1,13 @@
+ID,Name,Age,Gender,Department,JobTitle,City,Country,Salary,YearsExperience
+1,Aisha Hassan,29,Female,Human Resources,HR Specialist,Cairo,Egypt,52000,5
+2,Kenji Tanaka,41,Male,Engineering,Software Engineer,Tokyo,Japan,85000,15
+3,Maria Gonzalez,35,Female,Finance,Financial Analyst,Madrid,Spain,68000,10
+4,David Miller,46,Male,Sales,Sales Manager,Chicago,USA,79000,18
+5,Priya Sharma,32,Female,Marketing,Marketing Executive,Mumbai,India,61000,8
+6,Chen Wei,38,Male,Operations,Operations Manager,Shanghai,China,76000,12
+7,Fatima Al Zahra,27,Female,Customer Support,Support Specialist,Dubai,UAE,48000,4
+8,Lars Johansson,50,Male,Engineering,Senior Engineer,Stockholm,Sweden,92000,25
+9,Ana Silva,31,Female,Design,UX Designer,São Paulo,Brazil,64000,7
+10,Michael O'Connor,44,Male,Finance,Accountant,Dublin,Ireland,71000,19
+11,Thabo Ndlovu,36,Male,IT,System Administrator,Johannesburg,South Africa,66000,11
+12,Sofia Petrova,28,Female,Research,Data Analyst,Sofia,Bulgaria,59000,6
