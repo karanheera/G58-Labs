@@ -1,151 +1,215 @@
-# PY005 - Simple Interest Calculator
-**Difficulty:** ★☆☆☆☆ Beginner
+# PY005 — Simple Interest Calculator
 
-## Problem Statement
-
-***Given principal, rate, and time, calculate simple interest and display the result.***
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 5 Minutes
 
 ---
 
-### Formula
+## 1. Problem
 
-```
-Simple Interest = (P × R × T) / 100
-```
-
-Where:
-
-- P = Principal amount
-- R = Rate of interest
-- T = Time (in years)
+Given principal, rate, and time, calculate simple interest and display the result.
 
 ---
 
-### Example
+## 2. Example
 
-**Input**
+### Input
+
 ```text
-P = 1000
-R = 5
+P = 1000  
+R = 5  
 T = 2
 ```
 
-**Output**
+### Output
+
 ```text
 Simple Interest: 100.0
 ```
 
 ---
 
-## ⭐ Key Concept
+## 3. Constraints
 
-In this program, you will:
-
-- Work with multiple variables
-- Use a formula with more than two values
-- Apply arithmetic operations together
+- Use given values of P, R, and T.
+- Apply the correct formula.
+- Store the result in a variable.
+- Print output exactly as shown.
+- Do not use loops or functions.
 
 ---
 
-## How to Think About the Problem
+## 4. Think Before You Code
 
-- What values are given?
+Before writing any code, think about:
+
+- What values are already given?
 - What formula connects them?
-- What should be calculated?
+- What operations are required?
 
 ---
 
+## 5. Hints
+
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store principal, rate, and time in variables
-- Apply simple interest formula
-- Print result
+### Hint 1
+Use the formula:
+
+```text
+SI = (P × R × T) / 100
+```
+
+---
+
+### Hint 2
+Multiply first, then divide by 100.
+
+---
+
+### Hint 3
+Store the result before printing.
 
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- Multiple variables
+- Arithmetic expressions
+- Order of operations
+- Mathematical formulas
 
-1. Define principal (P), rate (R), time (T)
-2. Apply formula: (P × R × T) / 100
-3. Store result
-4. Print result
-
-</details>
+### Programming
+- Combine multiple inputs
+- Apply formulas
+- Store computed results
+- Input → Process → Output flow
 
 ---
 
-<details>
-
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Multiple Inputs → Formula → Output
+```
+
+This pattern is widely used in financial and calculation-based programs.
+
+---
+
+## 8. Core Logic
+
+The program takes three values: principal, rate, and time.
+
+It applies the simple interest formula and prints the calculated result.
+
+---
+
+## 9. Algorithm
+
+1. Store principal (P), rate (R), and time (T)
+2. Apply formula (P × R × T) / 100
+3. Store result in variable
+4. Print result
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(1)**  
+Fixed number of arithmetic operations.
+
+### Space Complexity
+
+**O(1)**  
+Uses only a constant number of variables.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
-SET P, R, T
+Store P, R, T
 
 SI = (P * R * T) / 100
 
-PRINT SI
+Print SI
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+## 12. Notes
 
 | Term | Meaning |
 |------|--------|
-| Principal | Initial money amount |
+| Principal | Initial amount of money |
 | Rate | Percentage of interest |
 | Time | Duration in years |
-| Formula | A rule used to calculate result |
-| Expression | A math calculation |
-| Output | Result shown on screen |
-
-</details>
+| Formula | Mathematical rule |
+| Expression | Calculation using operators |
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Multiple variables
-- Formula-based calculation
-- Arithmetic operations (×, /)
-- Order of operations
-
-</details>
+- Work with multiple variables
+- Apply formulas correctly
+- Perform chained arithmetic operations
+- Print computed results
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why do we multiply P, R, and T first?**  
+Because multiplication has higher precedence than division in arithmetic expressions.
+
+---
+
+**2. Why do we divide by 100?**  
+Because the rate is given in percentage form.
+
+---
+
+**3. What is the time complexity and why?**  
+It is O(1) because the number of operations does not depend on input size.
+
+---
+
+**4. What happens if we change the order of operations?**  
+Incorrect order may produce wrong results due to operator precedence rules.
+
+---
+
+**5. Can this be written in one line?**  
+Yes:
+
+```python
+print("Simple Interest:", (1000 * 5 * 2) / 100)
+```
+
+But using variables improves readability and maintainability.
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-[*Click Here*](solution.py)
+
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Used in:
-
-- Banking systems
-- Loan calculations
-- Financial apps
-- Investment tools
-- Education systems

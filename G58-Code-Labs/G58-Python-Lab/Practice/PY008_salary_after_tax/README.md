@@ -1,9 +1,11 @@
-# PY008 - Salary After Tax
+# PY008 — Salary After Tax
 
-**Difficulty:** ★☆☆☆☆ Beginner
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 10 Minutes
 
+---
 
-## Problem Statement
+## 1. Problem
 
 A company needs to calculate an employee's salary after deducting income tax.
 
@@ -16,187 +18,211 @@ Use the values already provided in the program.
 
 ---
 
-### Given Data
+## 2. Example
 
-```
-Monthly Salary = 60000
+### Input (Given Data)
+
+```text
+Monthly Salary = 60000  
 Tax Rate = 10%
 ```
 
----
+### Output
 
-### Formula
-
-```
-Tax Amount = Salary × Tax Rate
-
-Salary After Tax = Salary − Tax Amount
-```
-
----
-
-### Expected Output
-
-```
-Monthly Salary: 60000
-Tax Amount: 6000.0
+```text
+Monthly Salary: 60000  
+Tax Amount: 6000.0  
 Salary After Tax: 54000.0
 ```
 
 ---
 
-## ⭐ Key Concept (Very Important)
+## 3. Constraints
 
-This program introduces **percentage calculations**.
-
-A percentage tells us what part of a value should be calculated.
-
-In Python:
-
-```python
-tax_rate = 10 / 100
-```
-
-This converts **10%** into **0.10**, which can be used in calculations.
-
-Example:
-
-```python
-tax = salary * tax_rate
-```
+- Use only the given values.
+- Convert percentage into decimal form.
+- Store all results in variables.
+- Do not use `input()`, loops, or functions.
 
 ---
 
-## Why this matters
+## 4. Think Before You Code
 
-Percentage calculations are used every day in:
+Before writing any code, think about:
 
-- Employee payroll
-- Income tax
-- Shopping discounts
-- Bank interest
-- Insurance premiums
-- Investment returns
+- How do we convert percentage into a usable number?
+- What is the first value to calculate?
+- How is final salary derived?
 
 ---
 
-## How to Think About the Problem
-
-Ask yourself:
-
-- What is the employee's salary?
-- What percentage should be deducted?
-- How is the tax amount calculated?
-- How do we find the remaining salary?
-
----
+## 5. Hints
 
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store the monthly salary
-- Store the tax rate
-- Calculate the tax amount
-- Calculate the salary after tax
-- Display the results
+### Hint 1
+Convert percentage:
+
+```text
+10% = 10 / 100 = 0.1
+```
+
+---
+
+### Hint 2
+Multiply salary by tax rate.
+
+---
+
+### Hint 3
+Subtract tax from salary.
 
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- Percentage calculations
+- Variables
+- Multiplication and subtraction
+- Floating-point numbers
 
-1. Store monthly salary
+### Programming
+- Financial calculations
+- Derived values from base data
+- Store → Process → Output flow
+
+---
+
+## 7. Pattern Recognition
+
+```
+Base Value → Percentage Calculation → Final Result
+```
+
+This pattern is heavily used in financial systems.
+
+---
+
+## 8. Core Logic
+
+The salary is given.
+
+We calculate tax using percentage, then subtract it from salary to get final take-home pay.
+
+---
+
+## 9. Algorithm
+
+1. Store salary
 2. Store tax rate
-3. Calculate tax amount
-4. Calculate salary after tax
-5. Display all values
-
-</details>
+3. Convert percentage to decimal
+4. Calculate tax amount
+5. Subtract tax from salary
+6. Print results
 
 ---
 
-<details>
+## 10. Complexity
 
-<summary>Pseudocode</summary>
+### Time Complexity
 
-```
+**O(1)**  
+Fixed number of arithmetic operations.
+
+### Space Complexity
+
+**O(1)**  
+Uses only a constant number of variables.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
 Store salary
-
 Store tax rate
 
-Calculate tax amount
+tax = salary × (tax_rate / 100)
 
-Calculate salary after tax
+salary_after_tax = salary - tax
 
-Display salary
-
-Display tax amount
-
-Display salary after tax
+Print salary
+Print tax
+Print salary_after_tax
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+## 12. Notes
 
 | Term | Meaning |
-|------|---------|
-| variable | Stores a value |
-| percentage | A value out of 100 |
-| expression | A mathematical calculation |
-| multiplication | Finding a percentage of a value |
-| subtraction | Taking one value away from another |
-| tax | Money deducted from income |
-
-</details>
+|------|--------|
+| Variable | Stores data |
+| Percentage | Value out of 100 |
+| Decimal | Converted percentage form |
+| Multiplication | Used to calculate percentage |
+| Subtraction | Used to get final value |
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Variables
-- Percentage calculations
-- Multiplication
-- Subtraction
-- Storing calculated values
-- Displaying results
-
-</details>
+- Work with percentages
+- Convert values correctly
+- Perform chained calculations
+- Store intermediate results
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why do we divide percentage by 100?**  
+Because percentages are based on a scale of 100.
+
+---
+
+**2. Why do we multiply salary with tax rate?**  
+To find the portion of salary that should be deducted.
+
+---
+
+**3. Why is the time complexity O(1)?**  
+Because operations do not depend on input size.
+
+---
+
+**4. What happens if we forget to convert percentage?**  
+The tax amount will be 100 times larger than expected.
+
+---
+
+**5. Can this be written in one line?**  
+Yes:
+
+```python
+print("Salary After Tax:", 60000 - (60000 * 0.1))
+```
+
+But splitting improves readability and debugging.
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
 
-[*Click Here*](solution.py)
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Salary calculations are used in:
-
-- Payroll software
-- Human Resources (HR) systems
-- Accounting applications
-- Banking systems
-- Government tax portals

@@ -1,129 +1,198 @@
-# PY001 - Print Personal Greeting
-**Difficulty:** ★☆☆☆☆ Beginner
+# PY001 — Print Personal Greeting
 
-## Problem Statement
-***Write a program that asks the user for their name and prints a greeting message.***
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 5 Minutes
 
-### Example
+---
 
-**Input**
+## 1. Problem
+
+Write a program that reads a user's name and prints a greeting message.
+
+---
+
+## 2. Example
+
+### Input
 
 ```text
 John
 ```
 
-**Output**
+### Output
 
 ```text
 Hello, John
 ```
 
+---
 
-### ⚠️ Important Rule
-Try solving it yourself before checking the solution.
+## 3. Constraints
 
-*How to Think About the Problem*
-
-Before coding:
-
-- Think on paper / MS Word / notebook
-- Ask yourself:
-  - What is input?
-  - What is output?
-  - How do I connect them?*
-
-First think, then code on plain paper or MS word or Google Doc
-
+- Use `input()` to read the user's name.
+- Store the input in a variable.
+- Print the greeting exactly as shown.
+- Do not use loops or functions.
 
 ---
 
-<details>
-<summary>Approach</summary>
+## 4. Think Before You Code
 
-- Take input using `input()`
-- Store it in a variable
-- Print `"Hello, " + name`
+Before writing any code, think about:
+
+- What information is being given?
+- Where will the input be stored?
+- How will the output use that input?
+
+---
+
+## 5. Hints
+
+<details>
+
+<summary>Need a Hint?</summary>
+
+### Hint 1
+Use `input()` to read user input.
+
+---
+
+### Hint 2
+Store it in a variable.
+
+---
+
+### Hint 3
+Print `"Hello, "` + name.
+
 </details>
 
 ---
 
-<details>
-<summary>Algorithm</summary>
+## 6. Learning Objectives
 
-1. Read input from user  
-2. Store in variable  
-3. Print greeting message  
-</details>
+### Python
+- `input()` function
+- variables
+- `print()` function
+
+### Programming
+- input → process → output flow
+- data storage and reuse
 
 ---
 
-<details>
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Input → Store → Output
+```
+
+---
+
+## 8. Core Logic
+
+Take input from the user, store it in a variable, and print a greeting using that variable.
+
+---
+
+## 9. Algorithm
+
+1. Read input from user
+2. Store it in a variable
+3. Print greeting message
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(n)**  
+Depends on length of input string.
+
+### Space Complexity
+
+**O(n)**  
+Stores input string in memory.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
+
 READ name
+
 PRINT "Hello, " + name
+
 END
 ```
 
-</details>
+---
+
+## 12. Notes
+
+| Term | Meaning |
+|------|--------|
+| `input()` | Reads user input as a string |
+| Variable | Stores data for reuse |
+| `=` | Assigns value to a variable |
+| `print()` | Displays output |
+| String | Sequence of characters (text) |
 
 ---
 
-<details>
-<summary>Complexity</summary>
+## 13. After Solving
 
-*Time Complexity*
-
-`input()` reads the user's input. If the input length is `n` characters, reading it takes `O(n)` time.
-
-`print("Hello,", name)` outputs the greeting and the input string, which also takes `O(n)` time because it prints the entire input.
-
-**Overall Time Complexity: `O(n)`**
-
-(where `n` is the length of the input string)
-
-*Space Complexity*
-
-The variable `name` stores the input string of length `n`, requiring `O(n)` space.
-
-No other data structures grow with input size.
-
-**Overall Space Complexity: `O(n)`**
-
-(Simple and constant operations only)
-
-</details>
+- Read user input
+- Store values in variables
+- Print formatted output
+- Understand input → output flow
 
 ---
 
-<details>
-<summary>Key Learning</summary>
+## 14. Interview Follow-up Questions
 
-- input() function
-- print() function
-- string concatenation
-</details>
+**1. What does `input()` return?**  
+It always returns a string, even if the input looks like a number.
 
 ---
 
+**2. Why do we store input in a variable?**  
+So we can reuse the value later without asking the user again.
+
+---
+
+**3. What happens if we don't use a variable?**  
+We can still print directly, but the code becomes less readable and harder to extend.
+
+---
+
+**4. What happens if the user enters nothing?**  
+An empty string is returned, and the program prints only `"Hello, "`.
+
+---
+
+**5. Can this problem be solved in one line?**  
+Yes:
+
+```python
+print("Hello,", input())
+```
+
+But using variables improves clarity and maintainability.
+
+---
+
+## 15. Solution
+
 <details>
+
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
-[*Click Here* ](solution.py)
 
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-### Real-World Use Case
-
-Greeting users is commonly used in:
-- Login systems
-- Customer portals
-- Chatbots
-- Desktop applications
-- Web applications

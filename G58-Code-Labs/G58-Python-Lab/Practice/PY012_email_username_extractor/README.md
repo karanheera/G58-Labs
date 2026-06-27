@@ -1,9 +1,11 @@
-# PY012 - Email Username Extractor
+# PY012 — Email Username Extractor
 
-**Difficulty:** ★★☆☆☆ Beginner
+**Difficulty:** ★★☆☆☆ Beginner  
+**Estimated Time:** 7 Minutes
 
+---
 
-## Problem Statement
+## 1. Problem
 
 An email address contains two parts:
 
@@ -16,173 +18,206 @@ Use the value already provided in the program.
 
 ---
 
-### Given Data
+## 2. Example
 
-```
+### Input (Given Data)
+
+```text
 Email = john.smith@gmail.com
 ```
 
----
+### Output
 
-### Expected Output
-
-```
-Email: john.smith@gmail.com
+```text
+Email: john.smith@gmail.com  
 
 Username: john.smith
 ```
 
 ---
 
-## ⭐ Key Concept (Very Important)
+## 3. Constraints
 
-This program introduces **string slicing**.
+- Use only the given email value.
+- Extract username using string slicing.
+- Do not use `input()`, loops, or functions.
 
-A string is made up of individual characters.
+---
 
-Python lets us extract part of a string using slicing.
+## 4. Think Before You Code
 
-Example:
+Before writing any code, think about:
 
-```python
-email = "john@gmail.com"
+- What is the structure of an email?
+- Where does the username end?
+- How can we extract part of a string?
 
-username = email[:4]
+---
+
+## 5. Hints
+
+<details>
+
+<summary>Need a Hint?</summary>
+
+### Hint 1
+Email format:
+
+```text
+username@domain
 ```
 
-Slicing follows this pattern:
+---
 
-```python
+### Hint 2
+Find position of `@`.
+
+---
+
+### Hint 3
+Use slicing:
+
+```text
 text[start:end]
 ```
 
-- `start` → where to begin
-- `end` → where to stop (not included)
-
----
-
-## Why this matters
-
-Working with parts of text is common in:
-
-- Login systems
-- Registration forms
-- Email applications
-- Customer databases
-- User account management
-
----
-
-## How to Think About the Problem
-
-Ask yourself:
-
-- What information is stored in the email?
-- Which part do we need?
-- How can we extract only the username?
-
----
-
-<details>
-
-<summary>Approach</summary>
-
-- Store the email address
-- Extract the username using string slicing
-- Store the extracted username
-- Display both values
-
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- String slicing
+- Index-based extraction
+- String variables
 
-1. Store the email address
-2. Extract the username portion
-3. Store the username
-4. Display the email
-5. Display the username
-
-</details>
+### Programming
+- Data extraction from structured text
+- Working with substrings
+- Understanding string structure
 
 ---
 
-<details>
-
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Full String → Extract Substring → Required Part
+```
+
+This pattern is used in almost all parsing systems.
+
+---
+
+## 8. Core Logic
+
+The username is the part of the email before the `@` symbol.
+
+We extract it using string slicing.
+
+---
+
+## 9. Algorithm
+
+1. Store email address
+2. Find position of `@`
+3. Slice string from start to `@`
+4. Store username
+5. Print results
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(n)**  
+Where `n` is the length of the string (searching or slicing depends on string size).
+
+---
+
+### Space Complexity
+
+**O(n)**  
+Stores original email and extracted substring.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
 Store email address
 
-Extract username
+Find position of "@"
 
-Store username
+username = email from start to "@"
 
-Display email
-
-Display username
+Print email
+Print username
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+## 12. Notes
 
 | Term | Meaning |
-|------|---------|
-| string | A sequence of text |
-| character | A single letter, number, or symbol |
+|------|--------|
+| string | Text data |
 | slicing | Extracting part of a string |
-| index | Position of a character in a string |
+| index | Position of a character |
+| substring | Part of a string |
+| delimiter | Character used to split data |
 | variable | Stores a value |
-| output | Information displayed on the screen |
-
-</details>
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Strings
-- String slicing
-- Index positions
-- Variables
-- Displaying text
-
-</details>
+- Work with string slicing
+- Extract structured data
+- Understand string positions
+- Handle text parsing
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why do we slice up to `@`?**  
+Because everything before `@` is the username in email format.
+
+---
+
+**2. What happens if `@` is missing?**  
+The logic breaks; slicing becomes invalid for extraction.
+
+---
+
+**3. Is slicing O(1)?**  
+No, slicing depends on string size → O(n).
+
+---
+
+**4. Why is string slicing useful?**  
+It helps extract meaningful parts of structured text.
+
+---
+
+**5. Can this be done without slicing?**  
+Yes, using `.split("@")[0]` which is more readable in real applications.
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
 
-[*Click Here*](solution.py)
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Username extraction is used in:
-
-- Email applications
-- User registration systems
-- Login portals
-- CRM software
-- Customer management systems

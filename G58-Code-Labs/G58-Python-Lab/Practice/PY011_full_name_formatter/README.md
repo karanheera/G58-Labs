@@ -1,9 +1,11 @@
-# PY011 - Full Name Formatter
+# PY011 — Full Name Formatter
 
-**Difficulty:** ★☆☆☆☆ Beginner
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 5 Minutes
 
+---
 
-## Problem Statement
+## 1. Problem
 
 A registration system stores a person's first name and last name separately.
 
@@ -13,182 +15,204 @@ Use the values already provided in the program.
 
 ---
 
-### Given Data
+## 2. Example
 
-```
-First Name = John
+### Input (Given Data)
+
+```text
+First Name = John  
 Last Name = Smith
 ```
 
----
+### Output
 
-### Expected Output
-
-```
-First Name: John
-Last Name: Smith
+```text
+First Name: John  
+Last Name: Smith  
 
 Full Name: John Smith
 ```
 
 ---
 
-## ⭐ Key Concept (Very Important)
+## 3. Constraints
 
-This program introduces **strings**.
-
-A string is used to store text.
-
-Examples:
-
-```python
-first_name = "John"
-city = "London"
-```
-
-Strings can also be joined together.
-
-This is called **string concatenation**.
-
-Example:
-
-```python
-full_name = first_name + " " + last_name
-```
-
-Notice the `" "`.
-
-It adds a space between the first and last name.
+- Use only the given values.
+- Store names in variables.
+- Use string concatenation.
+- Do not use `input()`, loops, or functions.
 
 ---
 
-## Why this matters
+## 4. Think Before You Code
 
-Working with text is common in programs such as:
+Before writing any code, think about:
 
-- Registration systems
-- Contact lists
-- Banking applications
-- Hospital records
-- School management systems
+- What text values are given?
+- How do we join two strings?
+- Where should the final result be stored?
 
 ---
 
-## How to Think About the Problem
-
-Ask yourself:
-
-- What text is already available?
-- How can two pieces of text be joined?
-- How can a space be added between them?
-
----
+## 5. Hints
 
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store the first name
-- Store the last name
-- Join both names with a space
-- Store the result
-- Display all values
+### Hint 1
+Strings can be joined using `+`.
+
+---
+
+### Hint 2
+Add a space between names:
+
+```text
+"John" + " " + "Smith"
+```
+
+---
+
+### Hint 3
+Store the final result in a new variable.
 
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- String variables
+- String concatenation
+- Printing text output
 
-1. Store the first name
-2. Store the last name
-3. Join the names with a space
-4. Store the full name
-5. Display the results
-
-</details>
+### Programming
+- Working with textual data
+- Combining values
+- Data formatting
 
 ---
 
-<details>
-
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Text Part 1 + Separator + Text Part 2 → Final String
+```
+
+This pattern is widely used in formatting systems.
+
+---
+
+## 8. Core Logic
+
+The first name and last name are combined using string concatenation with a space in between.
+
+---
+
+## 9. Algorithm
+
+1. Store first name
+2. Store last name
+3. Concatenate both with a space
+4. Store full name
+5. Print all values
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(1)**  
+String concatenation is constant time for fixed input size.
+
+### Space Complexity
+
+**O(1)**  
+Stores a fixed number of string variables.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
 Store first name
-
 Store last name
 
-Join first name, space, and last name
+full_name = first_name + " " + last_name
 
-Store full name
-
-Display first name
-
-Display last name
-
-Display full name
+Print first name
+Print last name
+Print full name
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+## 12. Notes
 
 | Term | Meaning |
-|------|---------|
-| string | A sequence of text |
+|------|--------|
+| string | Text data |
 | variable | Stores a value |
-| concatenation | Joining text together |
-| space | A blank character between words |
-| assignment | Saving a value using = |
-| output | Information displayed on the screen |
-
-</details>
+| concatenation | Joining strings |
+| space | Separator between words |
+| assignment | Storing a value |
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Strings
-- Variables
-- String concatenation
-- Creating new text
-- Displaying text
-
-</details>
+- Work with string values
+- Combine multiple text fields
+- Format output properly
+- Understand concatenation
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why do we need `" "` between names?**  
+To ensure proper spacing between words.
+
+---
+
+**2. What happens if we don’t add space?**  
+The output becomes `JohnSmith`, which is incorrect formatting.
+
+---
+
+**3. Is string concatenation expensive?**  
+For small strings, it is O(1), but large repeated concatenations can become inefficient.
+
+---
+
+**4. Can we use another method instead of `+`?**  
+Yes, `.join()` or f-strings can also be used.
+
+---
+
+**5. Which method is preferred in real systems?**  
+f-strings are preferred for readability:
+
+```python
+full_name = f"{first_name} {last_name}"
+```
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
 
-[*Click Here*](solution.py)
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Full names are displayed in:
-
-- Registration forms
-- Identity cards
-- Banking software
-- Hospital management systems
-- Customer databases

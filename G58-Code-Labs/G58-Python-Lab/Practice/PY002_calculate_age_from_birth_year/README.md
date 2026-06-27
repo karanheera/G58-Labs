@@ -1,175 +1,206 @@
-# PY002 - Calculate Age from Birth Year
-**Difficulty:** ★☆☆☆☆ Beginner
+# PY002 — Calculate Age from Birth Year
 
-## Problem Statement
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 5 Minutes
 
-***A person's birth year is already stored in a variable. Calculate their age assuming the current year is 2026, and print the result.***
+---
 
-### Starter Code
+## 1. Problem
+
+A person's birth year is already stored in a variable.
+
+Calculate their age assuming the current year is **2026**, and print the result.
+
+---
+
+## 2. Example
+
+### Input (Starter Code)
 
 ```python
 birth_year = 2005
 ```
 
-Complete the program to print the person's age.
-
----
-
-### Example
-
-**Code**
-
-```python
-birth_year = 2000
-```
-
-**Output**
+### Output
 
 ```text
-Age: 25
+Age: 21
 ```
 
 ---
 
-### ⚠️ Important Rule
+## 3. Constraints
 
-Try solving it yourself before checking the solution.
+- Use the given `birth_year` variable.
+- Store the current year in a separate variable.
+- Calculate the age using subtraction.
+- Do not use `input()`, loops, or functions.
 
-## How to Think About the Problem
+---
 
-Before coding:
+## 4. Think Before You Code
+
+Before writing any code, think about:
 
 - What information is already available?
-- What information do you need to calculate?
-- Which mathematical operation will help?
-
-Think on paper, MS Word, or a notebook before writing code.
+- What needs to be calculated?
+- Which mathematical operation should be used?
+- Where should the result be stored?
 
 ---
 
+## 5. Hints
+
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store the current year in a variable.
-- Subtract the birth year from the current year.
-- Store the result in another variable.
-- Print the age.
+### Hint 1
+Store the current year in a variable.
+
+---
+
+### Hint 2
+Subtract birth year from current year.
+
+---
+
+### Hint 3
+Store the result in a variable named `age`.
 
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- Variables with numeric values
+- Subtraction operator (`-`)
+- `print()` function
 
-1. Store the birth year.
-2. Store the current year (2026).
-3. Calculate age using subtraction.
-4. Print the result.
-
-</details>
+### Programming
+- Basic arithmetic operations
+- Store → Process → Output flow
+- Reusing existing data
 
 ---
 
-<details>
-
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Store Data → Calculate → Output Result
+```
+
+This is one of the most common programming patterns in interviews.
+
+---
+
+## 8. Core Logic
+
+The birth year is already given.
+
+We store the current year in a variable, subtract birth year from it, and print the result as age.
+
+---
+
+## 9. Algorithm
+
+1. Store birth year
+2. Store current year (2026)
+3. Subtract birth year from current year
+4. Store result in `age`
+5. Print age
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(1)**  
+The program performs a fixed number of operations.
+
+### Space Complexity
+
+**O(1)**  
+Only a few integer variables are used regardless of input size.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
-SET birth_year = given value
-SET current_year = 2026
+Store birth year
 
-age = current_year - birth_year
+Store current year
 
-PRINT age
+age = current year - birth year
+
+Print age
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Complexity</summary>
-
-### Time Complexity
-
-The program performs one subtraction and one print operation.
-
-**Overall Time Complexity: `O(1)`**
-
-(Constant time)
-
-### Space Complexity
-
-The program stores only a few integer variables.
-
-**Overall Space Complexity: `O(1)`**
-
-(Constant space)
-
-</details>
-
----
-
-<details>
-
-<summary>Glossary (Technical Terms)</summary>
+## 12. Notes
 
 | Term | Meaning |
-|------|------------------|
-| Variable | A named container that stores a value. |
-| Integer | A whole number like 10, 50, or 2025. |
-| Assignment (`=`) | Putting a value into a variable. |
-| Arithmetic | Doing maths like addition, subtraction, multiplication, or division. |
-| Subtraction (`-`) | Finding the difference between two numbers. |
-| Expression | A calculation that produces a value, such as `2026 - birth_year`. |
-| Output | The information shown on the screen. |
-
-</details>
+|------|--------|
+| Variable | Stores a value for reuse |
+| Integer | Whole number like 10, 2026 |
+| Assignment (`=`) | Stores value in variable |
+| Subtraction (`-`) | Finds difference between numbers |
+| Expression | A calculation that produces a value |
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Variables
-- Integer values
-- Arithmetic operations
-- Subtraction
-- Storing calculated values
-- Printing output
-
-</details>
+- Work with numeric variables
+- Perform subtraction
+- Store computed results
+- Print final output
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why is the time complexity O(1)?**  
+Because the program always performs a fixed number of operations regardless of input size.
+
+---
+
+**2. Why do we store the current year in a variable?**  
+To make the program flexible and readable instead of hardcoding the expression everywhere.
+
+---
+
+**3. What happens if birth year is greater than current year?**  
+The result becomes negative, which is logically invalid and should be validated in real applications.
+
+---
+
+**4. Can we directly print the result without storing it?**  
+Yes, but storing it improves readability and debugging.
+
+---
+
+**5. Why is subtraction used here?**  
+Because age is calculated as the difference between two years.
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
 
-[*Click Here*](solution.py)
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Age calculations are commonly used in:
-
-- School admission systems
-- Online registration forms
-- Hospital management software
-- Banking applications
-- Insurance systems
-- Government portals

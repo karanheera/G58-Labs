@@ -1,8 +1,11 @@
-# PY007 - Grocery Bill Calculator
+# PY007 — Grocery Bill Calculator
 
-**Difficulty:** ★☆☆☆☆ Beginner
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 10 Minutes
 
-## Problem Statement
+---
+
+## 1. Problem
 
 A grocery store has the following items in a shopping basket.
 
@@ -14,179 +17,212 @@ Use the values already provided in the program.
 
 ---
 
-### Given Data
+## 2. Example
 
-```
-Rice = 850
-Milk = 120
-Bread = 45
-Eggs = 180
+### Input (Given Data)
+
+```text
+Rice = 850  
+Milk = 120  
+Bread = 45  
+Eggs = 180  
 Fruits = 325
 ```
 
----
+### Output
 
-### Expected Output
-
-```
-Rice: 850
-Milk: 120
-Bread: 45
-Eggs: 180
-Fruits: 325
+```text
+Rice: 850  
+Milk: 120  
+Bread: 45  
+Eggs: 180  
+Fruits: 325  
 
 Total Grocery Bill: 1520
 ```
 
 ---
 
-## ⭐ Key Concept (Very Important)
+## 3. Constraints
 
-This program introduces **adding multiple values together**.
-
-Each grocery item's price is stored in a **variable**.
-
-Then all the prices are added to calculate the final bill.
-
-Example:
-
-```python
-rice = 850
-milk = 120
-
-total = rice + milk
-```
+- Use only the given values.
+- Store each item price in a separate variable.
+- Do not use `input()`, loops, or functions.
 
 ---
 
-## Why this matters
+## 4. Think Before You Code
 
-Many real-world programs calculate totals.
+Before writing any code, think about:
 
-Examples include:
-
-- Shopping bills
-- Restaurant invoices
-- Online orders
-- Medical bills
-- Utility payments
+- What values are already given?
+- What needs to be calculated?
+- How will the total be computed?
 
 ---
 
-## How to Think About the Problem
-
-Ask yourself:
-
-- What values are already available?
-- Which values need to be added?
-- Where should the final result be stored?
-- How should the bill be displayed?
-
----
+## 5. Hints
 
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store each grocery item's price in a variable
-- Add all the prices together
-- Store the result in a variable
-- Display each item
-- Display the total bill
+### Hint 1
+Store each item price in a variable.
+
+---
+
+### Hint 2
+Add all variables together.
+
+---
+
+### Hint 3
+Store the result in a `total` variable.
 
 </details>
 
 ---
 
-<details>
+## 6. Learning Objectives
 
-<summary>Algorithm</summary>
+### Python
+- Variables
+- Arithmetic addition
+- Storing computed values
+- `print()` function
 
-1. Store the price of each grocery item
-2. Add all prices
-3. Store the total bill
-4. Display every item
-5. Display the total amount
-
-</details>
+### Programming
+- Summing multiple values
+- Store → Process → Output pattern
+- Working with grouped data
 
 ---
 
-<details>
-
-<summary>Pseudocode</summary>
+## 7. Pattern Recognition
 
 ```
+Multiple Values → Addition → Total Result
+```
+
+This pattern is used in billing and calculation systems.
+
+---
+
+## 8. Core Logic
+
+Each grocery item price is stored in a variable.
+
+All values are added together to calculate the total bill.
+
+---
+
+## 9. Algorithm
+
+1. Store prices of all grocery items
+2. Add all values
+3. Store result in `total`
+4. Print each item
+5. Print total bill
+
+---
+
+## 10. Complexity
+
+### Time Complexity
+
+**O(1)**  
+Fixed number of arithmetic operations.
+
+### Space Complexity
+
+**O(1)**  
+Uses a constant number of variables.
+
+---
+
+## 11. Pseudocode
+
+```text
 START
 
-Store price of rice
-Store price of milk
-Store price of bread
-Store price of eggs
-Store price of fruits
+Store rice price
+Store milk price
+Store bread price
+Store eggs price
+Store fruits price
 
-Calculate total bill
+total = sum of all items
 
-Display each item
-
-Display total bill
+Print all items
+Print total bill
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+## 12. Notes
 
 | Term | Meaning |
-|------|---------|
-| variable | Stores a value |
-| assignment | Saving a value using = |
-| arithmetic | Mathematical calculation |
-| expression | A calculation like rice + milk |
-| total | Sum of multiple values |
-| output | Information shown on the screen |
-
-</details>
+|------|--------|
+| Variable | Stores a value |
+| Assignment (`=`) | Assigns value to variable |
+| Expression | A calculation |
+| Arithmetic | Mathematical operations |
+| Total | Sum of values |
 
 ---
 
-<details>
+## 13. After Solving
 
-<summary>Key Learning</summary>
-
-- Variables
-- Addition
-- Arithmetic expressions
-- Storing calculated values
-- Displaying results
-
-</details>
+- Work with multiple variables
+- Perform addition operations
+- Store computed totals
+- Print structured output
 
 ---
+
+## 14. Interview Follow-up Questions
+
+**1. Why do we store each item separately?**  
+To keep data organized and easy to manage.
+
+---
+
+**2. Why do we calculate total at the end?**  
+Because it depends on all individual item values.
+
+---
+
+**3. What is the time complexity and why?**  
+O(1), because operations are fixed regardless of input size.
+
+---
+
+**4. What happens if one item is missing?**  
+The total bill will be incorrect.
+
+---
+
+**5. Can we calculate total in one line?**  
+Yes:
+
+```python
+total = rice + milk + bread + eggs + fruits
+```
+
+But separating improves readability and debugging.
+
+---
+
+## 15. Solution
 
 <details>
 
 <summary>Solution (Open only after trying)</summary>
 
-To Open Solution:
 
-[*Click Here*](solution.py)
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-## Real-World Use Case
-
-Grocery bill calculations are used in:
-
-- Supermarkets
-- Retail stores
-- Billing software
-- Online shopping platforms
-- Point of Sale (POS) systems

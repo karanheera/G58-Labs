@@ -5,7 +5,7 @@
 
 ---
 
-### Problem
+## 1. Problem
 
 You are given a monthly income and several monthly expenses.
 
@@ -18,142 +18,135 @@ Use the values already provided in the program.
 
 ---
 
-### Example
+## 2. Example
 
 ### Input
 
 ```text
 Monthly Income = 50000
 
-Rent = 15000
-Groceries = 6000
-Electricity = 1800
-Internet = 1000
+Rent = 15000  
+Groceries = 6000  
+Electricity = 1800  
+Internet = 1000  
 Transportation = 2500
 ```
 
 ### Output
 
 ```text
-Monthly Income: 50000
-Total Expenses: 26300
+Monthly Income: 50000  
+Total Expenses: 26300  
 Remaining Balance: 23700
 ```
 
 ---
 
-### Constraints
+## 3. Constraints
 
 - Use only the given values.
 - Store each value in a separate variable.
-- Do not use `input()`.
-- Do not use loops or functions.
+- Do not use `input()`, loops, or functions.
 
 ---
 
-### Think Before You Code
+## 4. Think Before You Code
 
-Before writing any code, think about the following:
+Before writing any code, think about:
 
-- Which values are expenses?
-- How can all expenses be combined into one value?
-- How is the remaining balance calculated?
-- Which result should be calculated first?
-
-Try solving the problem before viewing the hints.
+- What values are expenses?
+- How can all expenses be combined?
+- What should be calculated first?
 
 ---
+
+## 5. Hints
 
 <details>
 
 <summary>Need a Hint?</summary>
 
 ### Hint 1
-
-Store each amount in its own variable.
+Store each expense in a separate variable.
 
 ---
 
 ### Hint 2
-
-Find the **Total Expenses** first.
+Add all expenses first.
 
 ---
 
 ### Hint 3
-
-Use this formula:
+Use:
 
 ```text
-Remaining Balance = Monthly Income - Total Expenses
+Remaining Balance = Income - Total Expenses
 ```
 
 </details>
 
 ---
 
-### Learning Objectives
-
-By completing this exercise, you will learn how to:
+## 6. Learning Objectives
 
 ### Python
-
-- Store data using variables.
-- Assign values using `=`.
-- Display output using `print()`.
+- Variable assignment
+- Arithmetic operations (`+`, `-`)
+- `print()` function
 
 ### Programming
-
-- Break a problem into smaller steps.
-- Perform arithmetic calculations.
-- Store → Process → Display information.
+- Break problem into steps
+- Store → Process → Output pattern
+- Working with multiple variables
 
 ---
 
-### Pattern Recognition
+## 7. Pattern Recognition
 
-This problem introduces one of the most common programming patterns:
-
-```text
-Store Data
-      ↓
-Process Data
-      ↓
-Display Result
+```
+Store Data → Process Data → Display Result
 ```
 
-You'll use this pattern throughout programming, whether you're building calculators, banking software, games, or web applications.
+This pattern is used in almost all real-world applications.
 
 ---
 
-### Core Logic
+## 8. Core Logic
 
-The program already contains all the required information.
-
-First, store each value in a variable.
-
-Next, add every expense to calculate the total spending.
-
-Finally, subtract the total expenses from the monthly income to find the remaining balance.
+Store all income and expense values in variables, sum all expenses, then subtract from income to get remaining balance.
 
 ---
 
-### Algorithm
+## 9. Algorithm
 
-1. Store the monthly income.
-2. Store each expense.
-3. Calculate the total expenses.
-4. Calculate the remaining balance.
-5. Display all results.
+1. Store monthly income
+2. Store all expenses
+3. Add all expenses
+4. Subtract from income
+5. Print results
 
 ---
 
-### Pseudocode
+## 10. Complexity
+
+### Time Complexity
+
+**O(1)**  
+Fixed number of arithmetic operations.
+
+### Space Complexity
+
+**O(1)**  
+Uses only a fixed number of variables.
+
+---
+
+## 11. Pseudocode
 
 ```text
 START
 
-Store monthly income
+Store income
 
 Store rent
 Store groceries
@@ -161,70 +154,79 @@ Store electricity
 Store internet
 Store transportation
 
-Total Expenses = Rent + Groceries + Electricity + Internet + Transportation
+total_expenses = sum of all expenses
 
-Remaining Balance = Monthly Income - Total Expenses
+remaining_balance = income - total_expenses
 
-Display Monthly Income
-Display Total Expenses
-Display Remaining Balance
+Print income
+Print total expenses
+Print remaining balance
 
 END
 ```
 
 ---
 
-### Notes
+## 12. Notes
 
 | Term | Meaning |
-|------|---------|
-| Variable | Stores a value for later use. |
-| Assignment (`=`) | Stores a value inside a variable. |
-| Expression | A calculation that produces a value. |
-| Arithmetic | Mathematical operations like `+` and `-`. |
-| `print()` | Displays output on the screen. |
+|------|--------|
+| Variable | Stores a value |
+| Assignment (`=`) | Assigns value to variable |
+| Expression | A calculation |
+| Arithmetic | Mathematical operations |
+| `print()` | Displays output |
 
 ---
 
-### After Solving, You Should Be Able To
+## 13. After Solving
 
-- Create variables.
-- Store numeric values.
-- Perform addition and subtraction.
-- Build simple mathematical expressions.
-- Print meaningful results.
-- Break a simple problem into logical steps.
+- Work with multiple variables
+- Perform summation
+- Apply subtraction logic
+- Format output correctly
 
 ---
 
-### Interview Insight
+## 14. Interview Follow-up Questions
 
-This exercise tests your ability to:
-
-- Understand problem requirements.
-- Store values correctly.
-- Perform basic arithmetic.
-- Produce the required output.
-
-**Interview Difficulty:** Easy
+**1. Why do we calculate total expenses first?**  
+Because remaining balance depends on total expenses.
 
 ---
 
-### Real-World Usage
-
-This same logic is used in:
-
-- Personal budgeting
-- Expense tracking applications
-- Banking software
-- Accounting systems
-- Business finance dashboards
+**2. Why use separate variables for each expense?**  
+It improves readability and makes debugging easier.
 
 ---
+
+**3. What is the time complexity and why?**  
+O(1), because operations are fixed regardless of input size.
+
+---
+
+**4. What happens if we miss one expense?**  
+The total expense and final balance will be incorrect.
+
+---
+
+**5. Can we use a single line for total expenses?**  
+Yes:
+
+```python
+total = rent + groceries + electricity + internet + transportation
+```
+
+But separating improves clarity.
+
+---
+
+## 15. Solution
 
 <details>
 
-<summary>Solution (Open Only After Trying)</summary>
+<summary>Solution (Open only after trying)</summary>
+
 
 [**solution.py**](solution.py)
 

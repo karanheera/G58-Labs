@@ -1,11 +1,17 @@
-# Variable: stores the birth year
+# Store the birth year.
 birth_year = 2005
 
-# Variable: stores the current year
+# Store the current year.
 current_year = 2026
 
-# Expression: calculate age using subtraction
+# Calculate the person's age.
 age = current_year - birth_year
 
-# Output: display the calculated age
+# Display the result.
 print("Age:", age)
+
+"""
+Example
+
+Age: 21
+"""
