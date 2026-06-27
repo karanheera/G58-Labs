@@ -156,6 +156,7 @@ username = email from start to "@"
 
 Print email
 Print username
+Print Index position of @
 
 END
 ```

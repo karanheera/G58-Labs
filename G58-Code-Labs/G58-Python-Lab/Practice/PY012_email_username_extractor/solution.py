@@ -1,14 +1,16 @@
-# Variable: user's email address
+# Python program to extract username from email address
 email = "john.smith@gmail.com"
 
-# Processing: extract the username using string slicing
-username = email[:10]
+# find position of '@'
+at_pos = email.index("@")
 
-# Output: display the results
+# extract username using slicing
+username = email[:at_pos]
+
+# display output
 print("Email:", email)
-print()
-
 print("Username:", username)
+print("Index of '@' in this email is:", at_pos)
 
 """
 Expected Output
@@ -16,4 +18,5 @@ Expected Output
 Email: john.smith@gmail.com
 
 Username: john.smith
+Index of '@' in this email is: 10
 """
