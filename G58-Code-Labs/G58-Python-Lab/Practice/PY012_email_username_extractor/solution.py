@@ -16,7 +16,6 @@ print("Index of '@' in this email is:", at_pos)
 Expected Output
 
 Email: john.smith@gmail.com
-
 Username: john.smith
 Index of '@' in this email is: 10
 """
