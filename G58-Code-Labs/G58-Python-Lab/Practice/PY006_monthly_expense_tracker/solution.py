@@ -1,14 +1,14 @@
-# Variable: monthly income
+# Store the monthly income.
 income = 50000
 
-# Variables: monthly expenses
+# Store each monthly expense.
 rent = 15000
 groceries = 6000
 electricity = 1800
 internet = 1000
 transportation = 2500
 
-# Processing: calculate total expenses
+# Add all expenses to find the total amount spent.
 total_expenses = (
     rent
     + groceries
@@ -17,10 +17,10 @@ total_expenses = (
     + transportation
 )
 
-# Processing: calculate remaining balance
+# Calculate the money remaining after all expenses.
 remaining_balance = income - total_expenses
 
-# Output: display the results
+# Display the final results.
 print("Monthly Income:", income)
 print("Total Expenses:", total_expenses)
 print("Remaining Balance:", remaining_balance)

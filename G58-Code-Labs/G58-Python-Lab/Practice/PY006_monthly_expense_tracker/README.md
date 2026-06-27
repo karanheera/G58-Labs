@@ -1,25 +1,31 @@
-# PY006 - Monthly Expense Tracker
-**Difficulty:** ★☆☆☆☆ Beginner
+````markdown
+# PY006 — Monthly Expense Tracker
 
-## Problem Statement
+**Difficulty:** ★☆☆☆☆ Beginner  
+**Estimated Time:** 10 Minutes
 
-You have recorded your expenses for the month.
+---
+
+# Problem
+
+You are given a monthly income and several monthly expenses.
 
 Calculate:
 
-- Total expenses
-- Remaining balance after expenses
+- Total Expenses
+- Remaining Balance
 
 Use the values already provided in the program.
 
 ---
 
-### Given Data
+# Example
 
-```
+### Input
+
+```text
 Monthly Income = 50000
 
-Expenses:
 Rent = 15000
 Groceries = 6000
 Electricity = 1800
@@ -27,96 +33,125 @@ Internet = 1000
 Transportation = 2500
 ```
 
----
+### Output
 
-### Expected Output
-
-```
+```text
 Monthly Income: 50000
-
 Total Expenses: 26300
-
 Remaining Balance: 23700
 ```
 
 ---
 
-## ⭐ Key Concept (Very Important)
+# Constraints
 
-This program introduces **variables**.
-
-Variables store information that your program can use later.
-
-Example:
-
-```python
-income = 50000
-rent = 15000
-```
-
-Instead of typing numbers repeatedly, we store them inside variables.
+- Use only the given values.
+- Store each value in a separate variable.
+- Do not use `input()`.
+- Do not use loops or functions.
 
 ---
 
-## Why this matters
+# Think Before You Code
 
-Almost every real program stores information inside variables.
+Before writing any code, think about the following:
 
-Examples:
+- Which values are expenses?
+- How can all expenses be combined into one value?
+- How is the remaining balance calculated?
+- Which result should be calculated first?
 
-- Bank balance
-- Employee salary
-- Product price
-- Electricity bill
-- Hospital records
-
-Learning variables is one of the most important Python skills.
-
----
-
-## How to Think About the Problem
-
-Ask yourself:
-
-- What information do we already have?
-- Which values should be added together?
-- How can we calculate what is left?
+Try solving the problem before viewing the hints.
 
 ---
 
 <details>
 
-<summary>Approach</summary>
+<summary>Need a Hint?</summary>
 
-- Store income in a variable
-- Store every expense in its own variable
-- Add all expenses
-- Subtract expenses from income
-- Display the results
+### Hint 1
+
+Store each amount in its own variable.
+
+---
+
+### Hint 2
+
+Find the **Total Expenses** first.
+
+---
+
+### Hint 3
+
+Use this formula:
+
+```text
+Remaining Balance = Monthly Income - Total Expenses
+```
 
 </details>
 
 ---
 
-<details>
+# Learning Objectives
 
-<summary>Algorithm</summary>
+By completing this exercise, you will learn how to:
 
-1. Store monthly income
-2. Store each expense
-3. Calculate total expenses
-4. Calculate remaining balance
-5. Print the results
+### Python
 
-</details>
+- Store data using variables.
+- Assign values using `=`.
+- Display output using `print()`.
+
+### Programming
+
+- Break a problem into smaller steps.
+- Perform arithmetic calculations.
+- Store → Process → Display information.
 
 ---
 
-<details>
+# Pattern Recognition
 
-<summary>Pseudocode</summary>
+This problem introduces one of the most common programming patterns:
 
+```text
+Store Data
+      ↓
+Process Data
+      ↓
+Display Result
 ```
+
+You'll use this pattern throughout programming, whether you're building calculators, banking software, games, or web applications.
+
+---
+
+# Core Logic
+
+The program already contains all the required information.
+
+First, store each value in a variable.
+
+Next, add every expense to calculate the total spending.
+
+Finally, subtract the total expenses from the monthly income to find the remaining balance.
+
+---
+
+# Algorithm
+
+1. Store the monthly income.
+2. Store each expense.
+3. Calculate the total expenses.
+4. Calculate the remaining balance.
+5. Display all results.
+
+---
+
+# Pseudocode
+
+```text
 START
 
 Store monthly income
@@ -127,72 +162,72 @@ Store electricity
 Store internet
 Store transportation
 
-Add all expenses
+Total Expenses = Rent + Groceries + Electricity + Internet + Transportation
 
-Remaining Balance = Income - Total Expenses
+Remaining Balance = Monthly Income - Total Expenses
 
-Display income
-
-Display total expenses
-
-Display remaining balance
+Display Monthly Income
+Display Total Expenses
+Display Remaining Balance
 
 END
 ```
 
-</details>
-
 ---
 
-<details>
-
-<summary>Glossary</summary>
+# Python Notes
 
 | Term | Meaning |
 |------|---------|
-| variable | Stores a value |
-| assignment | Saving a value using = |
-| arithmetic | Mathematical calculations |
-| expression | A calculation like income - expenses |
-| total | Sum of several values |
-| balance | Money left after spending |
+| Variable | Stores a value for later use. |
+| Assignment (`=`) | Stores a value inside a variable. |
+| Expression | A calculation that produces a value. |
+| Arithmetic | Mathematical operations like `+` and `-`. |
+| `print()` | Displays output on the screen. |
 
-</details>
+---
+
+# After Solving, You Should Be Able To
+
+- ✅ Create variables.
+- ✅ Store numeric values.
+- ✅ Perform addition and subtraction.
+- ✅ Build simple mathematical expressions.
+- ✅ Print meaningful results.
+- ✅ Break a simple problem into logical steps.
+
+---
+
+# Interview Insight
+
+This exercise tests your ability to:
+
+- Understand problem requirements.
+- Store values correctly.
+- Perform basic arithmetic.
+- Produce the required output.
+
+**Interview Difficulty:** Easy
+
+---
+
+# Real-World Usage
+
+This same logic is used in:
+
+- Personal budgeting
+- Expense tracking applications
+- Banking software
+- Accounting systems
+- Business finance dashboards
 
 ---
 
 <details>
 
-<summary>Key Learning</summary>
+<summary>Solution (Open Only After Trying)</summary>
 
-- Variables
-- Assignment operator (`=`)
-- Addition
-- Subtraction
-- Printing results
+[**solution.py**](solution.py)
 
 </details>
-
----
-
-<details>
-
-<summary>Solution (Open only after trying)</summary>
-
-To Open Solution:
-
-[*Click Here*](solution.py)
-
-</details>
-
----
-
-## Real-World Use Case
-
-Expense tracking is used in:
-
-- Household budgeting
-- Personal finance
-- Banking applications
-- Accounting software
-- Business expense management
+````
