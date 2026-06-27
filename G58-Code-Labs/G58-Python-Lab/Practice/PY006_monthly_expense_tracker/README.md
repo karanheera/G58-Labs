@@ -1,4 +1,3 @@
-````markdown
 # PY006 — Monthly Expense Tracker
 
 **Difficulty:** ★☆☆☆☆ Beginner  
@@ -6,7 +5,7 @@
 
 ---
 
-# Problem
+### Problem
 
 You are given a monthly income and several monthly expenses.
 
@@ -19,7 +18,7 @@ Use the values already provided in the program.
 
 ---
 
-# Example
+### Example
 
 ### Input
 
@@ -43,7 +42,7 @@ Remaining Balance: 23700
 
 ---
 
-# Constraints
+### Constraints
 
 - Use only the given values.
 - Store each value in a separate variable.
@@ -52,7 +51,7 @@ Remaining Balance: 23700
 
 ---
 
-# Think Before You Code
+### Think Before You Code
 
 Before writing any code, think about the following:
 
@@ -93,7 +92,7 @@ Remaining Balance = Monthly Income - Total Expenses
 
 ---
 
-# Learning Objectives
+### Learning Objectives
 
 By completing this exercise, you will learn how to:
 
@@ -111,7 +110,7 @@ By completing this exercise, you will learn how to:
 
 ---
 
-# Pattern Recognition
+### Pattern Recognition
 
 This problem introduces one of the most common programming patterns:
 
@@ -127,7 +126,7 @@ You'll use this pattern throughout programming, whether you're building calculat
 
 ---
 
-# Core Logic
+### Core Logic
 
 The program already contains all the required information.
 
@@ -139,7 +138,7 @@ Finally, subtract the total expenses from the monthly income to find the remaini
 
 ---
 
-# Algorithm
+### Algorithm
 
 1. Store the monthly income.
 2. Store each expense.
@@ -149,7 +148,7 @@ Finally, subtract the total expenses from the monthly income to find the remaini
 
 ---
 
-# Pseudocode
+### Pseudocode
 
 ```text
 START
@@ -175,7 +174,7 @@ END
 
 ---
 
-# Python Notes
+### Notes
 
 | Term | Meaning |
 |------|---------|
@@ -187,18 +186,18 @@ END
 
 ---
 
-# After Solving, You Should Be Able To
+### After Solving, You Should Be Able To
 
-- ✅ Create variables.
-- ✅ Store numeric values.
-- ✅ Perform addition and subtraction.
-- ✅ Build simple mathematical expressions.
-- ✅ Print meaningful results.
-- ✅ Break a simple problem into logical steps.
+- Create variables.
+- Store numeric values.
+- Perform addition and subtraction.
+- Build simple mathematical expressions.
+- Print meaningful results.
+- Break a simple problem into logical steps.
 
 ---
 
-# Interview Insight
+### Interview Insight
 
 This exercise tests your ability to:
 
@@ -230,4 +229,3 @@ This same logic is used in:
 [**solution.py**](solution.py)
 
 </details>
-````
