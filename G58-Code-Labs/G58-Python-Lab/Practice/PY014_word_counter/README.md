@@ -24,7 +24,7 @@ I am the best and I love myself
 ### Output
 
 ```text
-I am the best and I love myself
+Sentence: I am the best and I love myself
 
 Word Count: 8
 ```
