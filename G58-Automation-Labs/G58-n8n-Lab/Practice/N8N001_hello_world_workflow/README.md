@@ -236,4 +236,5 @@ Understanding how a workflow starts, processes data, and produces output.
 
 [workflow.json](workflow.json)
 
+*You can download this workflow.json file and import into your n8n workflow via "import a file..."*
 </details>

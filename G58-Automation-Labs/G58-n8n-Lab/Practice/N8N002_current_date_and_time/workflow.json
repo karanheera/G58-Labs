@@ -1,14 +1,25 @@
 {
-  "name": "G58-Labs/N8N002_schedule_trigger_daily",
+  "name": "G58-Labs/N8N002_current_date_and_time",
   "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -432,
+        -16
+      ],
+      "id": "8f9f417d-d47c-4388-8913-9495757e6162",
+      "name": "Manual-Trigger"
+    },
     {
       "parameters": {
         "assignments": {
           "assignments": [
             {
               "id": "a54a736c-fd29-41bc-bc86-97eeb3c58785",
-              "name": "status",
-              "value": "Daily workflow executed",
+              "name": "current_datetime",
+              "value": "={{$now}}",
               "type": "string"
             }
           ]
@@ -18,37 +29,20 @@
       "type": "n8n-nodes-base.set",
       "typeVersion": 3.4,
       "position": [
-        -48,
+        -176,
         -16
       ],
       "id": "ac955de8-647e-4849-bcf4-d2b95f828841",
-      "name": "Edit Fields"
-    },
-    {
-      "parameters": {
-        "rule": {
-          "interval": [
-            {}
-          ]
-        }
-      },
-      "type": "n8n-nodes-base.scheduleTrigger",
-      "typeVersion": 1.3,
-      "position": [
-        -368,
-        -16
-      ],
-      "id": "6c2446e1-c4d7-4bb5-91a6-48a66037f251",
-      "name": "Schedule Trigger"
+      "name": "Current_DateTime"
     }
   ],
   "pinData": {},
   "connections": {
-    "Schedule Trigger": {
+    "Manual-Trigger": {
       "main": [
         [
           {
-            "node": "Edit Fields",
+            "node": "Current_DateTime",
             "type": "main",
             "index": 0
           }
@@ -62,7 +56,7 @@
     "binaryMode": "separate",
     "availableInMCP": false
   },
-  "versionId": "41fe6619-c515-4f9a-ac9e-8ceced35d0f2",
+  "versionId": "633413b4-ee1a-4af0-9332-169c37755b7a",
   "meta": {
     "instanceId": "7f864ed5d9b543f15daada94c96e8cf56d9190d404cb954e78ed2a49497d3768"
   },

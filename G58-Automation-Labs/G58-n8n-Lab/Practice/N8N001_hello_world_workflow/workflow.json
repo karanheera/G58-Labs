@@ -1,5 +1,5 @@
 {
-  "name": "G58-Labs/N8N001_manual_trigger_hello_world",
+  "name": "G58-Labs/N8N001_hello_world_workflow",
   "nodes": [
     {
       "parameters": {},
