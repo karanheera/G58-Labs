@@ -235,7 +235,7 @@ END
 
 Official Python Documentation:
 
-https://docs.python.org/3/library/stdtypes.html#common-sequence-operations
+https://docs.python.org/3/reference/expressions.html#slicings
 
 Python sequences (including strings) support slicing using:
 
