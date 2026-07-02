@@ -275,7 +275,7 @@ Understanding how to generate dynamic runtime values using Expressions.
 * Expressions are evaluated during execution.
 * ISO 8601 is the standard datetime format used by APIs.
 * Timestamps are fundamental to almost every automation.
-* Runtime values change every execution.
+* Runtime values change every executio.
 
 ---
 
